@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-family: Figtree;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.container > .card {
+  background-color: hsl(0, 0%, 100%);
+  width: 350px;
+  padding: 1rem;
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 10px;
+  box-shadow: 5px 5px hsl(0, 0%, 7%);
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+p.text1 {
+  background-color: hsl(47, 88%, 63%);
+  display: inline-block;
+  padding: 3px 5px;
+  margin: 0.8rem 0px 0.8rem 0px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+p.text2 {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 7%);
+}
+
+.text3 {
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+
+.text3:hover {
+  color:hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+p.text4 {
+  color: hsl(0, 0%, 42%);
+  margin-bottom: 1rem;
+}
+
+div.avatar{
+  margin-bottom: 0.8rem;
+}
+
+.avatar > .avatar-image {
+  height: 20px;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+p.avatar-name {
+  font-weight: 800;
+}
+
+@media (max-width: 375px)
+{
+  body {
+    font-size: 0.7rem;
+  }
+
+  .container>.card {
+    width: 250px;
+    padding: 0.7rem;
+  }
+
+  .text3 {
+    font-size: 1rem;
+  }
+}
+
+
